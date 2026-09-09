@@ -1,0 +1,199 @@
+/* ========== Google Fonts ========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap');
+
+/* ========== Color Palette ========== */
+:root {
+    --primary: #2563eb;          /* Main blue */
+    --primary-dark: #1d4ed8;     /* Darker blue for hover */
+    --bg: #f1f5f9;               /* Soft page background */
+    --card-bg: #ffffff;          /* Card background */
+    --text: #1e293b;             /* Dark text */
+    --muted: #64748b;            /* Secondary text */
+    --border: #e2e8f0;           /* Light borders */
+    --header-bg: #1e40af;        /* Table header */
+    --row-alt: #f8fafc;          /* Alternating row */
+}
+
+/* ========== Base Styles ========== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ========== Typography ========== */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--text);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 6px;
+    color: var(--primary);
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+/* ========== Logo + Heading Card ========== */
+body > img {
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+/* ========== How to use (details) ========== */
+details {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+details summary {
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--primary);
+}
+
+details p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* ========== Card Sections (Box Model) ========== */
+.add-expense-section,
+.expenses-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== Form Styling ========== */
+.add-expense-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.add-expense-section input,
+.add-expense-section select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.add-expense-section input:focus,
+.add-expense-section select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Button */
+#add-expense-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 6px;
+}
+
+#add-expense-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+/* ========== Table Styling ========== */
+.expenses-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.expenses-section th,
+.expenses-section td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.expenses-section th {
+    background-color: var(--header-bg);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.expenses-section th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.expenses-section th:last-child {
+    border-top-right-radius: 8px;
+}
+
+/* Alternating rows */
+.expenses-section tbody tr:nth-child(even) {
+    background-color: var(--row-alt);
+}
+
+.expenses-section tbody tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* ========== Video Section ========== */
+body > div:last-of-type {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 10px;
+    border: none;
+}
