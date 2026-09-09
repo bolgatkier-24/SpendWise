@@ -197,3 +197,26 @@ iframe {
     border-radius: 10px;
     border: none;
 }
+/* ========== Header Card ========== */
+.header-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.header-card img {
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.header-card h1 {
+    margin-bottom: 6px;
+}
+
+.header-card p {
+    margin-bottom: 0;
+}
