@@ -5,8 +5,49 @@ SpendWise is a web-based financial tracking and dashboard application designed t
 🌐 Live Demo
 
 Check out the live application hosted on Netlify:
-👉 View SpendWise Live (https://spendwisegatkier.netlify.app/#)                                                                                                                                                                                                                                                                                                                                                                                                                
-📁 Project Structure
+👉 View SpendWise Live (https://spendwisegatkier.netlify.app/#)
+
+ Technologies Used                                                            
+  
+HTML5: Used for structuring the web app, dashboard cards, navigation menu, form elements, and embedded video.
+
+CSS3: Handles styling, custom variables, CSS Grid for responsiveness, transitions, and dark mode support.
+
+JavaScript (ES6): Controls calculation logic, form handling, prompts, and browser console reporting.
+
+Netlify: Used for hosting and deploying the site online.
+
+Git & GitHub: Used for version control and pushing code online.
+
+ Deployment Process Summary
+
+Deploying this project to Netlify was straightforward once everything was set up. Here is how I did it:
+
+Prepared the Files: I made sure all files (index.html, style.css, script.js, and image.png) were saved in the root folder so the browser could find them easily.
+
+Pushed to GitHub: I uploaded my final code to a GitHub repository.
+
+Connected to Netlify: I logged into Netlify, linked my GitHub account, and selected the SpendWise project repository.
+
+Published: Netlify automatically detected the HTML file and published the site online with a live public link.
+
+ Challenges Encountered During Hosting
+
+Relative Asset Paths: Making sure image paths like image.png worked correctly after deployment took some testing so that images loaded on Netlify without breaking.
+
+CSS Grid Mobile Responsiveness: Ensuring the sidebar hidden state and dashboard grid reflowed smoothly on mobile screens below 768px took fine-tuning media queries.
+
+Console Syncing: Linking the form buttons to trigger dynamic calculation logs in the browser console required proper event listener setup in JavaScript.
+
+#Lessons Learned
+
+Deployment Workflows: Keeping project assets at the root directory makes continuous deployment on platforms like Netlify seamless.
+
+Mobile-First Thinking: Using CSS Custom Properties combined with CSS Grid makes switching layout structures for smaller screens much easier.
+
+Event Handling: Connecting HTML forms with JavaScript allows for interactive user inputs and real-time console feedback.
+
+ #Project Structure                                                                                                      
 
 The project consists of three core web files:
 
@@ -16,7 +57,7 @@ style.css: The stylesheet governing the layout, typography, responsive design ru
 
 script.js: The script handling initial application variables, budget calculation logic, user prompts, console reporting, and form event handling.
 
-Features
+ #Features
 
 Dashboard Overview Grid: Displays financial metrics and category breakdowns (Food & Dining, Transport, Rent, Entertainment, Savings, and Utilities).
 
@@ -28,7 +69,7 @@ Financial Calculations: Automatically computes remaining balances and budget uti
 
 Dark Theme Support: Automatically adjusts styling based on system color scheme preferences (prefers-color-scheme: dark).
 
-Getting Started
+#Getting Started Locally
 
 To run or view this project locally:
 
